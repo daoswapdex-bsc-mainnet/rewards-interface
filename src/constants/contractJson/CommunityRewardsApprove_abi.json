@@ -122,6 +122,19 @@
     "type": "function"
   },
   {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newTokenWallet",
+        "type": "address"
+      }
+    ],
+    "name": "setTokenWallet",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
     "inputs": [],
     "name": "getMemberList",
     "outputs": [
@@ -258,11 +271,11 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "releaseAmount",
+        "name": "getRewardAmount",
         "type": "uint256"
       }
     ],
-    "name": "release",
+    "name": "getReward",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
