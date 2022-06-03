@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import CommunityRewardsDAO from "../views/CommunityRewardsDAO.vue";
 import CommunityRewardsDST from "../views/CommunityRewardsDST.vue";
 
 Vue.use(VueRouter);
@@ -12,8 +13,13 @@ const routes = [
       {
         path: "",
         name: "Rewards",
-        redirect: "/dst",
+        redirect: "/dao",
         component: () => import("@/views/home/Index.vue")
+      },
+      {
+        path: "/dao",
+        name: "RewardsDAO",
+        component: CommunityRewardsDAO
       },
       {
         path: "/dst",

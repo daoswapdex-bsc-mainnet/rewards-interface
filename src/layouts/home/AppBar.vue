@@ -27,6 +27,14 @@
           background-color="transparent"
         >
           <v-tab
+            to="/dao"
+            :ripple="false"
+            class="font-weight-bold"
+            min-width="96"
+            text
+            >{{ $t("DAO") }}</v-tab
+          >
+          <v-tab
             to="/dst"
             :ripple="false"
             class="font-weight-bold"
@@ -60,6 +68,9 @@
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list shaped>
         <v-list-item-group v-model="group" color="#93B954">
+          <v-list-item to="/dao">
+            <v-list-item-title>{{ $t("DAO") }}</v-list-item-title>
+          </v-list-item>
           <v-list-item to="/dst">
             <v-list-item-title>{{ $t("DST") }}</v-list-item-title>
           </v-list-item>
